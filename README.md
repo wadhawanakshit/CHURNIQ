@@ -1,53 +1,118 @@
-# CHURNIQ | Customer Churn Prediction & Retention Intelligence
+# CHURNIQ — Customer Churn Prediction & Retention Intelligence
 
-CHURNIQ is a machine-learning-powered customer analytics platform
-designed to estimate customer churn probability and identify
-customers who may require retention attention.
+An end-to-end machine learning project that predicts customer churn, identifies high-risk customers, and provides actionable insights through an interactive analytics dashboard.
 
-## Features
+**Live Dashboard:** https://churniq-gfjfzkgoh6knoytyxgwquz.streamlit.app/
 
-- Customer churn exploratory data analysis
-- Customer segmentation and interactive visualisations
+## Project Overview
+
+Customer churn is a major challenge for subscription-based businesses. CHURNIQ uses historical customer data to predict which customers are likely to discontinue a service and helps businesses understand the factors associated with churn.
+
+The project combines exploratory data analysis, machine learning, model evaluation, explainable AI, and an interactive Streamlit dashboard.
+
+## Key Features
+
+- Customer churn analysis and interactive visualisations
+- Customer-level churn probability prediction
+- Batch prediction through CSV uploads
 - Machine learning model comparison
-- Validation-based decision threshold selection
 - SHAP-based model explainability
-- Individual customer churn prediction
-- Bulk customer prediction through CSV upload
-- Interactive Streamlit dashboard
+- Downloadable prediction results
 
 ## Technology Stack
 
-Python, Pandas, NumPy, Scikit-learn, SHAP, Plotly, Streamlit and Joblib.
-
-## Project Structure
-
-- app/: Streamlit dashboard
-- models/: Saved model and preprocessing bundle
-- notebooks/: Model development notebook
-- reports/: Model evaluation and analysis reports
-- assets/: Explainability visualisations
-
-## Run Locally
-
-1. Clone this repository.
-2. Install dependencies:
-
-   pip install -r requirements.txt
-
-3. Start the dashboard from the project root:
-
-   streamlit run app/dashboard.py
+| Category | Tools |
+|---|---|
+| Programming | Python |
+| Data Analysis | Pandas, NumPy |
+| Visualisation | Plotly, Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Explainable AI | SHAP |
+| Deployment | Streamlit |
+| Version Control | Git, GitHub |
 
 ## Dataset
 
-IBM Telco Customer Churn dataset.
+**IBM Telco Customer Churn Dataset**
 
-## Important Note
+- 7,043 customer records
+- 21 original columns
+- Customer demographics, account details, subscribed services, and churn status
 
-This project is an analytical demonstration using a public dataset.
-Predictions are estimates and should support, not replace,
-business decisions.
+The dataset is used for exploratory analysis, model training, and evaluation.
+
+## Machine Learning Workflow
+
+1. Data loading and preprocessing
+2. Exploratory data analysis
+3. Feature engineering and encoding
+4. Training and comparison of classification models
+5. Model selection using validation performance
+6. Decision-threshold tuning
+7. Final test-set evaluation
+8. SHAP explainability
+9. Model serialization and deployment
+
+## Project Structure
+
+```text
+CHURNIQ/
+├── app/
+│   └── dashboard.py
+├── models/
+│   └── churniq_model_bundle.joblib
+├── notebook/
+│   └── ChurnIQ_ML_Analysis.ipynb
+├── reports/
+│   ├── churniq_eda_insights.csv
+│   ├── churniq_final_metrics.csv
+│   ├── churniq_model_comparison.csv
+│   └── churniq_shap_feature_importance.csv
+├── assets/
+│   ├── churniq_global_feature_importance.png
+│   ├── churniq_shap_beeswarm.png
+│   └── churniq_individual_explanation.png
+├── requirements.txt
+└── README.md
+```
+
+## Explainable AI
+
+SHAP (SHapley Additive exPlanations) is used to understand how individual features influence model predictions.
+
+The project includes:
+- Global feature importance
+- SHAP summary visualisation
+- Individual customer-level explanations
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/wadhawanakshit/CHURNIQ.git
+cd CHURNIQ
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the dashboard:
+
+```bash
+streamlit run app/dashboard.py
+```
 
 ## Author
 
-Akshit Wadhawan
+**Akshit Wadhawan**  
+B.Tech — Artificial Intelligence & Data Science
+
+[GitHub](https://github.com/wadhawanakshit)
+
+---
+
+*Built as an end-to-end machine learning and customer analytics portfolio project.*
