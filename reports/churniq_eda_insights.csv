@@ -1,0 +1,15 @@
+Feature,Segment,Churn Rate (%)
+PaymentMethod,Electronic check,45.28541226215645
+Contract,Month-to-month,42.70967741935484
+InternetService,Fiber optic,41.89276485788114
+SeniorCitizen,1,41.68126094570928
+PaperlessBilling,Yes,33.565092304003834
+SeniorCitizen,0,23.606168446026096
+PaymentMethod,Mailed check,19.106699751861044
+InternetService,DSL,18.95910780669145
+PaymentMethod,Bank transfer (automatic),16.709844559585495
+PaperlessBilling,No,16.33008356545961
+PaymentMethod,Credit card (automatic),15.243101182654403
+Contract,One year,11.269517990495586
+InternetService,No,7.404980340760157
+Contract,Two year,2.831858407079646
