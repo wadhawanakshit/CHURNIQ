@@ -2,7 +2,7 @@
 
 An end-to-end machine learning project that predicts customer churn, identifies high-risk customers, and provides actionable insights through an interactive analytics dashboard.
 
-**Live Dashboard:** https://churniq-gfjfzkgoh6knoytyxgwquz.streamlit.app/
+**Live Dashboard:** [https://wadhawanakshit-churniq-appdashboard-ts9usz.streamlit.app/](https://wadhawanakshit-churniq-appdashboard-ts9usz.streamlit.app/)
 
 ## Project Overview
 
